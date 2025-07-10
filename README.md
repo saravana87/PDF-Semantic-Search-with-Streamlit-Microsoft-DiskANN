@@ -1,15 +1,22 @@
+PDF Semantic Search with Streamlit & Microsoft DiskANN
+This project is a simple web app that lets you upload any PDF and search it by meaning (not just keywords) using AI. It uses Microsoft DiskANN for ultra-fast vector search, making it perfect for large documents.
 
-1) Upload your PDF
-2) Extract Text
-3) Split into Sentences and Create Embeddings
-4) Build a Fast Search Index
+Features
+Upload any PDF and extract the text
 
+Split text into sentences and create embeddings with a pre-trained AI model (all-MiniLM-L6-v2)
 
-You can search by meaning, not just by keywords.
-It works on any PDF you upload.
-It’s fast, thanks to DiskANN.
+Build a fast search index using Microsoft DiskANN
 
-Run the app with streamlit run app.py.
-Upload a PDF.
-Wait for the index to build.
-Type your search and see the results!
+Instantly search your PDF by meaning, not just exact words
+
+How It Works
+Upload a PDF: Drag and drop or choose your file.
+
+Text Extraction: The app reads all the text from your PDF.
+
+Sentence Embeddings: Each sentence is converted into a vector using a pre-trained AI model.
+
+Indexing with DiskANN: Vectors are indexed using Microsoft DiskANN for lightning-fast search.
+
+Semantic Search: Type any question—find the most relevant sentences, even if the words are different!
